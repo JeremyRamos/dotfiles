@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/dewet/.oh-my-zsh
+  export ZSH=/home/jeremy/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -9,6 +9,10 @@ ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
+
+# Uncomment the following line to use hyphen-insensitive completion. Case
+# sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
@@ -48,11 +52,9 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 
 # User configuration
+  export PATH="/home/dewet/bin:/usr/local/heroku/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 
-export PATH="/home/dewet/bin:/usr/local/heroku/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 # export MANPATH="/usr/local/man:$MANPATH"
-
-export PATH=~/bin:$PATH #exercism.io needed this
 
 source $ZSH/oh-my-zsh.sh
 
@@ -80,26 +82,21 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias gits="git status"
-alias gitl="git log"
 alias lan="cd ~/langana"
-alias gitb="git branch"
+alias flix="cd ~/rails_ii_studio/flix"
+alias tit="cd ~/titus-evaluation"
 alias rs="rails s"
-alias ism="cd /home/dewet/exercism/ruby"
-alias pin="ping 8.8.8.8"
-alias rub="cd /home/dewet/ruby"
-alias gpush="git push"
-alias gpull="git pull"
-alias gph="git push heroku master"
-alias qui="cd ~/ruby/code-quiz"
-alias jes="bundle exec jekyll serve"
-alias dew="cd ~/dewetblomerus.github.io"
-alias jpost="bundle exec jekyll post"
-alias jdraft="bundle exec jekyll draft"
-alias jpublish="bundle exec jekyll publish"
-alias junpublish="bundle exec jekyll unpublish"
-alias cod="cd /home/dewet/ruby/codility"
+alias rc="rails c"
+alias rspec="bundle exec rspec"
+alias quiz="cd ~/code_quiz"
+alias rub="cd ~/ruby"
 
-export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+export PATH=$HOME/bin:$PATH
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+export PATH=$HOME:$PATH
