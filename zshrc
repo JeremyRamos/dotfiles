@@ -90,7 +90,7 @@ alias rc="rails c"
 alias rspec="bundle exec rspec"
 alias quiz="cd ~/code_quiz"
 alias rub="cd ~/ruby"
-
+alias gits="git status"
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
